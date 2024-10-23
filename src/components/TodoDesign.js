@@ -62,7 +62,6 @@ export default function Todo () {
   const handleFilterChange = (filter) => {
     setCurrentFilter(filter);
 
-    // items.map(item => {
       if (filter === "Completed") {
         setFilteredItems(items.filter((item) => item.completed));
       } else if (filter === "Active") {

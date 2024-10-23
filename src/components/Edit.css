@@ -15,6 +15,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
   gap: 7px;
 }
 
@@ -33,6 +34,7 @@
   flex-direction: column;
   text-align: center;
   width: 100%;
+  align-items: center;
 }
 
 .changed-input {
@@ -101,6 +103,11 @@
     width: 90%;
   }
   .current-object-text, .changed-object-text {
-    font-size: 28px;
+    font-size: 25px;
+  }
+  .changed-input {
+    width: 93%;
+    margin-bottom: -3px;
+    padding: 6.3px 10px;
   }
 } 
