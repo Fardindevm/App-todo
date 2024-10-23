@@ -1,0 +1,219 @@
+#root {
+  min-height: 100vh;
+  background-color: var(--gray-color);
+  position: relative;
+}
+
+:root {
+  /* Light mode colors */
+  --gray-color: #f4f2f2;
+  --white-color: #ffffff;
+  --very-light-gray: hsl(236, 33%, 92%);
+  --light-grayish-blue: hsl(234, 11%, 52%);
+  --dark-grayish-blue: hsl(236, 9%, 61%);
+  --between-very-and-dark-grayish-blue: hsl(235, 5%, 49%);
+  --very-dark-grayish-blue: hsl(235, 19%, 35%);
+  --border-bottom: hsl(233, 11%, 84%);
+  --blue : blue;
+  --black: black;
+  --black1: black;
+  --black2: hsl(235, 19%, 35%);
+  --filter: hsl(225, 2%, 57%);
+  --error-white: hsl(235, 21%, 11%);
+  --button: rgb(9, 223, 52);
+  --button-shadow: -2px 2px 17px rgb(62, 187, 145);
+  --filter-da : invert(65%) sepia(0%) saturate(0%) hue-rotate(153deg) brightness(85%) contrast(90%);
+  --filter-da-hover: invert(55%) sepia(0%) saturate(0%) hue-rotate(153deg) brightness(80%) contrast(95%);
+  --error-h1: hsl(240, 6%, 74%);
+  --edit-input: white;
+
+  /* Dark mode colors */
+  --very-dark-blue: hsl(235, 21%, 11%);
+  --very-dark-desaturated-blue: hsl(235, 24%, 19%);
+  --light-grayish-blue: hsl(234, 39%, 85%);
+  --light-grayish-blue-hover: hsl(236, 33%, 92%);
+  --dark-grayish-blue1: hsl(234, 11%, 52%);
+  --very-dark-grayish-blue: hsl(233, 14%, 35%);
+  --very-dark-grayish-blue2: hsl(237, 14%, 26%);
+  --light-blue: rgb(92, 92, 255);
+  --border: hsl(237, 14%, 26%);
+  --error-black: linear-gradient(to right, hsl(192, 47%, 31%), hsl(280, 44%, 43%)) border-box;
+  --night-button: hsl(29, 92%, 41%);
+  /* --night-buton-shadow: none; */
+  --filter-dark: invert(40%) sepia(10%) saturate(200%) hue-rotate(180deg) brightness(80%) contrast(85%);
+  --filter-dark-hover: invert(50%) sepia(10%) saturate(200%) hue-rotate(180deg) brightness(90%) contrast(85%);
+
+}
+
+.dark-mode {
+  --gray-color: var(--very-dark-blue);
+  --white-color: var(--very-dark-desaturated-blue);
+  --very-light-gray: var(--light-grayish-blue);
+  --light-grayish-blue: var(--dark-grayish-blue1);
+  --dark-grayish-blue: var(--very-dark-grayish-blue);
+  --very-dark-grayish-blue: var(--very-dark-grayish-blue2);
+  --blue: var(--light-blue);
+  --black: hsl(234, 39%, 85%);
+  --border-bottom: var(--border);
+  --black1: var(--light-grayish-blue-hover);
+  --black2: var(--light-grayish-blue-hover);
+  --filter: var(--between-very-and-dark-grayish-blue);
+  --error-white: var(--error-black);
+  --button: var(--night-button);
+  /* --button-shadow: var(--night-buton-shadow); */
+  --filter-da: var(--filter-dark);
+  --filter-da-hover: var(--filter-dark-hover);
+  --error-h1: var(--very-dark-blue);
+  --edit-input: hsl(236, 33%, 92%)
+}
+
+.header-img {
+  width: 100%;
+  height: 38vh;
+  transition: all 0.3s;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  width: 550px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -216px;
+  z-index: 2;
+}
+
+.main-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.Todo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Todo > h1 {
+  color: white;
+  letter-spacing: 15px;
+  font-size: 35px;
+}
+
+.moon-img {
+  object-fit: cover;
+  width: 25px;
+  height: 25px;
+}
+
+.adding-todo {
+  background-color: var(--white-color);
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+.adding-todo:not(.not-margin) {
+  margin-top: 40px;
+  border-radius: 5px;
+}
+
+.first-todo {
+  margin-bottom: 20px;
+}
+
+.adding-todo > button:not(.cross), .adding-todo > input[type="checkbox"] {
+  cursor: pointer;
+  margin: 10px 8px;
+  height: 23px;
+  width: 23px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid hsl(0, 9%, 77%);
+}
+
+.adding-todo > button:not(.cross):hover, .adding-todo > input[type="checkbox"]:hover:not(:checked) {
+  border: 1px solid transparent;
+  background: linear-gradient(var(--white-color), var(--white-color)) padding-box,
+              linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%)) border-box;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+
+.text-todo::placeholder {
+  color: var(--between-very-and-dark-grayish-blue);
+  opacity: 1; /* Firefox */
+  font-size: 18px;
+}
+
+.adding-todo > input[type="text"], .adding-todo > label {
+  border: none;
+  width: 90%;
+  padding-inline: 14px;
+  outline: none;
+  background: transparent;
+  color: var(--black)
+}
+
+.text-todo {
+  font-family: Josefin Sans;
+  font-size: 18px;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 40px;
+  color: var(--between-very-and-dark-grayish-blue);
+  font-size: 13px;
+  z-index: 1;
+}
+
+footer > p > a {
+  text-decoration: none;
+}
+
+.display {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .main {
+    width: 90%;
+  }
+  .header-img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .display {
+    display: block;
+    justify-content: center;
+    border-radius: 5px;
+  }
+
+  .display > .filters {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 60%;
+  }
+  
+  .pc-display {
+    display: none;
+  }
+
+  .filter-btn:not(.clear-completed) {
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .error-div {
+    width: 100px;
+  }
+  
+}

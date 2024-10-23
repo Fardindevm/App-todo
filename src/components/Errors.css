@@ -1,0 +1,55 @@
+.error-parent, .edit-parent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+} 
+
+
+.error-div, .edit-div {
+  background: var(--error-white);
+  display: flex;
+  padding: 25px 18px;
+  width: 400px;
+  border-radius: 15px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: 0 0 10px hsl(234, 4%, 47%);
+}
+
+.error-h1, .current-span {
+  color: red;
+}
+
+.error-p {
+  color: var(--gray-color);
+  font-size: 17px;
+}
+
+.stop-error {
+  padding: 8px 17px;
+  border: none;
+  border-radius: 7.5px;
+  cursor: pointer;
+  background-color: var(--button);
+}
+
+.stop-error:hover {
+  box-shadow: var(--button-shadow);
+}
+
+@media (max-width: 600px) {
+  .error-div {
+    width: 65%;
+  }
+}

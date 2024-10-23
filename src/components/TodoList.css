@@ -1,0 +1,47 @@
+.border-bottom {
+  border-bottom: 1px solid var(--border-bottom);
+}
+
+.cross {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-left: 5px;
+}
+
+.adding-todo > input[type="checkbox"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.adding-todo > input[type="checkbox"]:checked {
+  background: url('../images/icon-check.svg'), linear-gradient(to right,hsl(192, 100%, 67%) , hsl(280, 87%, 65%));;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
+.label {
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+.line-through {
+  text-decoration: line-through;
+  opacity: 0.25;
+}
+
+.pencil {
+  width: 18px;
+  height: 18px;
+  transform: scale(2.2); /* Increase this value to make the image appear larger */
+  filter: var(--filter-da);
+}
+
+.pencil:hover, .cross:hover {
+  filter: var(--filter-da-hover);
+}
