@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/App-todo/static/css/main.32557e0a.css",
+    "main.js": "/App-todo/static/js/main.3006b8a6.js",
+    "static/js/453.ac79db8d.chunk.js": "/App-todo/static/js/453.ac79db8d.chunk.js",
+    "static/media/bg-desktop-light.jpg": "/App-todo/static/media/bg-desktop-light.3508d620efd5a52bb4ce.jpg",
+    "static/media/bg-desktop-dark.jpg": "/App-todo/static/media/bg-desktop-dark.73e47dbb723ebc772ef0.jpg",
+    "static/media/download-icon-svg+create+edit+edit+file+office+pencil+writing+creativ+icon-_0.svg": "/App-todo/static/media/download-icon-svg+create+edit+edit+file+office+pencil+writing+creativ+icon-1320185158722776676_0.087fd3a308194c7e89fb037cb1dbf8e2.svg",
+    "static/media/icon-sun.svg": "/App-todo/static/media/icon-sun.910b1f9a23741afc341e95653a51f14f.svg",
+    "index.html": "/App-todo/index.html",
+    "static/media/icon-moon.svg": "/App-todo/static/media/icon-moon.6c03114b495d05f4380b3c544d9afe2a.svg",
+    "static/media/icon-cross.svg": "/App-todo/static/media/icon-cross.6ee81d30b75cab19d6f7314624fcc4d6.svg",
+    "static/media/icon-check.svg": "/App-todo/static/media/icon-check.a8fb15d0278c8e312df5.svg",
+    "main.32557e0a.css.map": "/App-todo/static/css/main.32557e0a.css.map",
+    "main.3006b8a6.js.map": "/App-todo/static/js/main.3006b8a6.js.map",
+    "453.ac79db8d.chunk.js.map": "/App-todo/static/js/453.ac79db8d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32557e0a.css",
+    "static/js/main.3006b8a6.js"
+  ]
+}
